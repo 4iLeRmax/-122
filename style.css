@@ -7,11 +7,19 @@
   list-style: none;
   font-family: 'Roboto', sans-serif;
 }
-:root{
+html{
   --green: #24B47E;
   --bg: #181818;
   --gray: #E0E0E0;
   --blue: #1374EF;
+  --white: #fff;
+}
+html[data-theme='light']{
+  --green: #24B47E;
+  --bg: #FFF;
+  --gray: #999;
+  --blue: #1374EF;
+  --white: rgb(34, 34, 34);
 }
 body{
   background-color: var(--bg);
@@ -26,13 +34,13 @@ body{
   font-size: 48px;
   font-weight: 700px;
   line-height: 58px;
-  color: #fff;
+  color: var(--white);
 }
 .title_small{
   font-size: 36px;
   font-weight: 400px;
   line-height: 43px;
-  color: #fff;
+  color: var(--white);
 }
 .sub_title{
   font-size: 14px;
@@ -81,7 +89,7 @@ header{
   display: inline-block;
   font-size: 12px;
   font-weight: 700;
-  color: #fff;
+  color: var(--white);
   padding: 7px 11px;
   background-color: var(--green);
   box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
@@ -118,7 +126,7 @@ header{
   margin-left: 12px;
   font-size: 18px;
   font-weight: 400;
-  color: #fff;
+  color: var(--white);
 }
 .mb-57{
   margin-bottom: 57px;
@@ -163,13 +171,13 @@ header{
   font-weight: 400;
   line-height: 28px;
   margin-bottom: 20px;
-  color: #fff;
+  color: var(--white);
 }
 .card__sub_title{
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
-  color: #E0E0E0;
+  color: var(--gray);
   max-width: 260px;
 }
 
@@ -177,7 +185,7 @@ header{
   margin-bottom: 227px;
 }
 .media__sub_title{
-  color: #E0E0E0;
+  color: var(--gray);
 }
 .media__sub_title.mb-16{
   font-size: 18px;
@@ -207,7 +215,7 @@ header{
   cursor: pointer;
 }
 .tabs_nav_btnT.active{
-  color: #fff;
+  color: var(--white);
   background: #2A2A2A;
   box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
 }
@@ -226,7 +234,7 @@ header{
   font-weight: 400;
   line-height: 24px;
   margin-bottom: 44px;
-  color: #E0E0E0;
+  color: var(--gray);
   max-width: 330px;
 }
 .media__card{
@@ -236,7 +244,7 @@ header{
   border-radius: 4px 4px 0px 0px;
 }
 .media__card__title{
-  color: #fff;
+  color: var(--white);
   margin-bottom: 7px;
 }
 .media__card__sub_title{
@@ -244,7 +252,7 @@ header{
   font-weight: 400;
   line-height: 20px;
   max-width: 300px;
-  color: #E0E0E0;
+  color: var(--gray);
   margin-bottom: 13px;
 }
 .media__card__add_info{
@@ -259,7 +267,7 @@ header{
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  color: #e0e0e0;
+  color: var(--gray);
 }
 .media__card__add_info:nth-child(3) 
 .media__card__sub_title{
@@ -282,14 +290,14 @@ header{
   width: 95px;
 }
 .media__text__script_card__btn ion-icon{
-  color: #fff;
+  color: var(--white);
   margin-right: 10px;
   width: 15px;
 }
 .media__text__script_card__btn p{
   font-size: 14px;
   font-weight: 400;
-  color: #fff;
+  color: var(--white);
   border-left: 1px solid #1269D3;
   padding: 10px 0 10px 10px;
 }
@@ -305,7 +313,7 @@ header{
   margin-bottom: 12px;
 }
 .api__sub_title{
-  color: #E0E0E0;
+  color: var(--gray);
   margin-bottom: 19px;
   line-height: 20px;
 }
@@ -328,7 +336,7 @@ header{
   font-weight: 400;
   line-height: 28px;
   max-width: 170px;
-  color: #fff;
+  color: var(--white);
   margin-bottom: 19px;
 }
 .api__card__sub_title{
@@ -336,7 +344,7 @@ header{
   font-weight: 400;
   line-height: 20px;
   max-width: 160px;
-  color: #E0E0E0;
+  color: var(--gray);
 }
 .api__card__btn{
   display: inline-block;
@@ -371,7 +379,7 @@ header{
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
-  color: #E0E0E0;
+  color: var(--gray);
 }
 
 
@@ -395,7 +403,7 @@ header{
   cursor: pointer;
 }
 .tabs_nav_btn.active{
-  color: #fff;
+  color: var(--white);
   background: #2A2A2A;
   box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
 }
@@ -490,14 +498,14 @@ header{
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
-  color: #fff;
+  color: var(--white);
 }
 .copy__btn h1{
   display: none;
   position: absolute;
   font-size: 10px;
   font-weight: 400;
-  color: #fff;
+  color: var(--white);
   padding: 5px 10px;
   background: rgba(0, 0, 0, .8);
   border-radius: 6px;
@@ -537,7 +545,7 @@ header{
   cursor: pointer;
 }
 .tabs_nav_btnThree.active{
-  color: #fff;
+  color: var(--white);
   background: #2A2A2A;
   box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
 }
@@ -561,7 +569,7 @@ header{
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
-  color: #fff;
+  color: var(--white);
 }
 .item__sub_title{
   font-size: 14px;
@@ -581,13 +589,13 @@ header{
   margin-bottom: 48px;
 }
 .build__title span{
-  color: #fff;
+  color: var(--white);
 }
 .build__btn{
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  color: #fff;
+  color: var(--white);
   padding: 9px 17px;
   background: #24B47E;
   box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
@@ -653,6 +661,54 @@ header{
   line-height: 24px;
   color: #777;
 }
+.style__switcher{
+  display: flex;
+  align-items: center;
+}
+.style__switcher ion-icon{
+  color: #BBBBBB;
+  font-size: 28px;
+}
+.toggle{
+  margin: 0 22px;
+}
+.toggle input{
+  display: none;
+}
+.toggle label{
+  width: 44px;
+  height: 24px;
+  background: #444444;
+  border-radius: 99px;
+  float: right;
+  position: relative;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+.toggle label::before{
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: #1F1F1F;
+  /* background: red; */
+  box-shadow: 0px 0px 0px #FFFFFF;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 4%;
+  transform: translate(-4%, -50%);
+  transition: all .3s ease;
+}
+.toggle input:checked + label{
+  background: #444444;
+}
+.toggle input:checked + label::before{
+  top: 50%;
+  right: 94%;
+  transform: translate(+94%, -50%);
+  background-color: #fff;
+}
+
 
 @media only screen and (max-width: 450px){
   .container8{
@@ -741,6 +797,9 @@ header{
   .media__main{
     flex-direction: column;
   }
+  .media__card{
+    width: 100%;
+  }
   .tabs_nav{
     display: flex;
     flex-direction: column;
@@ -795,7 +854,7 @@ header{
     padding: 1px;
     font-family: 'Source Code Pro', monospace;
     position: relative; */
-    width: 400px;
+    width: 100%;
     /* overflow: scroll-x; */
     border-radius: 8px 8px 0 8px;
   }
@@ -808,7 +867,7 @@ header{
   .tabs_itemThree{
     border-radius: 8px 8px 0 8px;
     height: 311px;
-    width: 400px;
+    width: 100%;
   }
   .build{
     padding: 100px 5%;
@@ -830,5 +889,8 @@ header{
   }
   .footer__col:nth-child(1){
     margin: 0;
+  }
+  .footer__end{
+    padding: 30px 0;
   }
 }
