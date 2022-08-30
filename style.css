@@ -722,9 +722,10 @@ header{
     overflow: hidden;
     height: 70px;
     transition: all .3s ease;
-    /* position: fixed;
+    position: fixed;
+    z-index: 99;
     top: 0;
-    left: 0; */
+    left: 0;
     background: #202020;
     border-radius: 0 0 15px 15px;
   }
@@ -810,6 +811,7 @@ header{
   .tabs_nav_btnT{
     margin: 0;
     width: 80%;
+    padding: 15px;
   }
   .tabs_itemT{
     width: 100%;
@@ -845,6 +847,7 @@ header{
   .tabs_nav_btn{
     width: 80%;
     margin: 0;
+    padding: 15px 10px;
   }
   .tabs_item{
     /* width: 100%; */
@@ -863,7 +866,11 @@ header{
     right: -1px;
     border-radius: 0 0 4px 4px;
   }
-  /* .tabs_nav_btnThree{} */
+  .tabs_nav_btnThree{
+    margin: 0;
+    width: 80%;
+    padding: 15px;
+  }
   .tabs_itemThree{
     border-radius: 8px 8px 0 8px;
     height: 311px;

@@ -97,6 +97,12 @@ menuBtn.addEventListener('click', ()=>{
   nav.classList.toggle('active');
 });
 
+window.addEventListener("scroll", () => {
+  if(document.querySelector('.header').classList.contains("active")){
+    document.querySelector('.header').classList.remove('active');
+  }
+  });
+
 
 let checkbox = document.querySelector('input[name=theme]');
 
